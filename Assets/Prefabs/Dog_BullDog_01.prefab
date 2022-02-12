@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931342884}
   - component: {fileID: 9111657176945321772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Beagle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931361578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,13 +170,13 @@ GameObject:
   - component: {fileID: 9111657176931328436}
   - component: {fileID: 9111657176941112180}
   - component: {fileID: 9111657175843836513}
-  - component: {fileID: 8148130092130344515}
-  - component: {fileID: 6158854323935545790}
   - component: {fileID: 1225192604}
   - component: {fileID: 2896439261487043908}
-  m_Layer: 0
+  - component: {fileID: 6948322132175442714}
+  - component: {fileID: 6158854323935545790}
+  m_Layer: 8
   m_Name: Dog_BullDog_01
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,6 +229,7 @@ Transform:
   - {fileID: 9111657176931290336}
   - {fileID: 9111657176931294926}
   - {fileID: 9111657176931295146}
+  - {fileID: 6078171888481688942}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -263,36 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514d3310bbaa40a419b38964488829aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
---- !u!54 &8148130092130344515
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9111657176931551688}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &6158854323935545790
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9111657176931551688}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.09922367, y: 0.19000337, z: 0.24690391}
-  m_Center: {x: -0.0028415737, y: 0.09248101, z: 0.033026606}
+  speed: 10
 --- !u!114 &1225192604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +289,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5c817bd269ea44baca0db3a3c007a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6948322132175442714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111657176931551688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bf50fede9169f4b8360f1b92911523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hungerSlider: {fileID: 6078171890219728598}
+  amountToBeFed: 1
+--- !u!65 &6158854323935545790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111657176931551688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09922367, y: 0.19000337, z: 0.24690391}
+  m_Center: {x: -0.0028415737, y: 0.09248101, z: 0.033026606}
 --- !u!1 &9111657176931551754
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931256730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Neck_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931342638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931334890}
   - component: {fileID: 9111657176945278940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_RhodesianRidgeback_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931277524}
   - component: {fileID: 9111657176945261610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BorderCollie_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931324612}
   - component: {fileID: 9111657176945277768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BorderCollie_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,7 +771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931345232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931313258}
   - component: {fileID: 9111657176945275850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Doberman_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931315418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -961,7 +960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931346816}
   - component: {fileID: 9111657176945260052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Beagle_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931283674}
   - component: {fileID: 9111657176945262066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_RhodesianRidgeback_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931351394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931302986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Head_JawEndSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,7 +1277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931283928}
   - component: {fileID: 9111657176945216884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_GermanShepherd_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,7 +1403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931326488}
   - component: {fileID: 9111657176945268076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BullTerrier_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931300504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Head_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,7 +1559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931280892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1591,7 +1590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931283908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,7 +1620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931275212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1652,7 +1651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931335548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931309576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_Eye_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1713,7 +1712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931314082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,7 +1743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931338406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_SHJntGrp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1775,7 +1774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931283202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1806,7 +1805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931320350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1838,7 +1837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931275870}
   - component: {fileID: 9111657176945282558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Labrador_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,7 +1964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931282936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +1996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931303778}
   - component: {fileID: 9111657176945275112}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Poodle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2123,7 +2122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931352280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2154,7 +2153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931309986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2185,7 +2184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931361716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Neck_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931348384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2248,7 +2247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931282792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Pug_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2279,7 +2278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931277068}
   - component: {fileID: 9111657176945273810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_GermanShepherd_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2404,7 +2403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931274678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2435,7 +2434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931295146}
   - component: {fileID: 9111657176945326986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_SaintBernard_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2563,7 +2562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931324508}
   - component: {fileID: 9111657176945321896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Labrador_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2690,7 +2689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931307148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2720,7 +2719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931341972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_Eye_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2751,7 +2750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931316910}
   - component: {fileID: 9111657176945290470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Pug_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +2877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931259204}
   - component: {fileID: 9111657176945259184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BullTerrier_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3003,7 +3002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931265312}
   - component: {fileID: 9111657176945216520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chihuahua_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3130,7 +3129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931255048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Head_JawSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3162,7 +3161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931349968}
   - component: {fileID: 9111657176945306192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BullDog_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3289,7 +3288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931326656}
   - component: {fileID: 9111657176945283052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_GermanShepherd_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3415,7 +3414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931351856}
   - component: {fileID: 9111657176945242250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Poodle_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3541,7 +3540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931325990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3572,7 +3571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931341836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Neck_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3604,7 +3603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931339794}
   - component: {fileID: 9111657176945319178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Doberman_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3730,7 +3729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931302542}
   - component: {fileID: 9111657176945289694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chihuahua_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3858,7 +3857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931282630}
   - component: {fileID: 9111657176945299422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Doberman_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3984,7 +3983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931328772}
   - component: {fileID: 9111657176945294600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Poodle_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4111,7 +4110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931311922}
   - component: {fileID: 9111657176945312974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BullDog_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4237,7 +4236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931333822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4268,7 +4267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931365568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Spine_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4299,7 +4298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931350990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_ROOTSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4334,7 +4333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931329684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4365,7 +4364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931296284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4397,7 +4396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931304556}
   - component: {fileID: 9111657176945289606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Pug_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4523,7 +4522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931307238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4555,7 +4554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931294926}
   - component: {fileID: 9111657176945215404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_SaintBernard_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4682,7 +4681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931348580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Spine_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4714,7 +4713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931344962}
   - component: {fileID: 9111657176945220122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chihuahua_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +4841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931301124}
   - component: {fileID: 9111657176945272578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BullDog_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4968,7 +4967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931280358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Spine_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5001,7 +5000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931294692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5031,7 +5030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931351138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5062,7 +5061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931256188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5093,7 +5092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931259432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5124,7 +5123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931273706}
   - component: {fileID: 9111657176945293934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BorderCollie_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5251,7 +5250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931288598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5282,7 +5281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931301436}
   - component: {fileID: 9111657176945267642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Beagle_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5409,7 +5408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931351520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5440,7 +5439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931339444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_r_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5471,7 +5470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931310812}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5503,7 +5502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931290336}
   - component: {fileID: 9111657176945324074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_SaintBernard_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5631,7 +5630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931366814}
   - component: {fileID: 9111657176945285092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_RhodesianRidgeback_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5758,7 +5757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931297666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5790,7 +5789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931332320}
   - component: {fileID: 9111657176945274586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Labrador_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5918,7 +5917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111657176931288680}
   - component: {fileID: 9111657176945295814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BullTerrier_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6042,7 +6041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931328450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6073,7 +6072,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931330960}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_l_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6104,7 +6103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111657176931302776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoatRig_Tail_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6126,3 +6125,140 @@ Transform:
   m_Father: {fileID: 9111657176931351394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1431465696
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9111657176931328436}
+    m_Modifications:
+    - target: {fileID: 6078171889282357304, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889282357304, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756232, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756234, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_Name
+      value: SliderCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.004615383
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.004615384
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.004615384
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.76923084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+--- !u!224 &6078171888481688942 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6078171889910756238, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+  m_PrefabInstance: {fileID: 1431465696}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6078171890219728598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6078171888958165046, guid: 20abd9dd2d176fe4eb5849fceec7608d, type: 3}
+  m_PrefabInstance: {fileID: 1431465696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
