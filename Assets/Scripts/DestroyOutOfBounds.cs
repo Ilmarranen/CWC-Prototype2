@@ -24,7 +24,11 @@ public class DestroyOutOfBounds : MonoBehaviour
         //Destroy objects out of players view
         if (transform.position.z > topBoundary)
         {
-            Destroy(gameObject);
+            // Instead of destroying the projectile when it leaves the screen
+            //Destroy(gameObject);
+
+            // Just deactivate it
+            gameObject.SetActive(false);
         }
         else if (transform.position.z < lowerBoundary || transform.position.x > rightBoundary || transform.position.x < leftBoundary) 
         {
